@@ -13,7 +13,9 @@ targets:
     type: application
     platform: iOS
     sources:
-      - Sources
+      - path: .
+        includes:
+          - "*.swift"
     info:
       path: Info.plist
       properties:
@@ -21,11 +23,6 @@ targets:
         UILaunchScreen: {}
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
-          - UIInterfaceOrientationLandscapeLeft
-          - UIInterfaceOrientationLandscapeRight
-        UISupportedInterfaceOrientations~ipad:
-          - UIInterfaceOrientationPortrait
-          - UIInterfaceOrientationPortraitUpsideDown
           - UIInterfaceOrientationLandscapeLeft
           - UIInterfaceOrientationLandscapeRight
         NSAppTransportSecurity:
